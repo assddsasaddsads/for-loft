@@ -14,11 +14,29 @@ namespace loft
     
     public partial class ProductSet
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public ProductSet()
+        {
+            this.OrderSet = new HashSet<OrderSet>();
+            this.ProviderSet = new HashSet<ProviderSet>();
+            this.StockroomSet = new HashSet<StockroomSet>();
+        }
+    
         public int Id { get; set; }
         public string Colour { get; set; }
         public string Size { get; set; }
         public string Quantity { get; set; }
         public string Material { get; set; }
         public Nullable<long> Price { get; set; }
+        public int IdProvider { get; set; }
+        public int IdStockroom { get; set; }
+        public string NameProduct { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<OrderSet> OrderSet { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ProviderSet> ProviderSet { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<StockroomSet> StockroomSet { get; set; }
     }
 }

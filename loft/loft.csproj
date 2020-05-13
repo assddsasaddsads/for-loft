@@ -67,14 +67,47 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAuthorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAuthorization.Designer.cs">
+      <DependentUpon>FormAuthorization.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormClient.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormClient.Designer.cs">
       <DependentUpon>FormClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManagerSet.cs">
-      <DependentUpon>ModelWFShop.tt</DependentUpon>
+    <Compile Include="FormEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployee.Designer.cs">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrder.Designer.cs">
+      <DependentUpon>FormOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProduct.Designer.cs">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProvider.Designer.cs">
+      <DependentUpon>FormProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStockRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStockRoom.Designer.cs">
+      <DependentUpon>FormStockRoom.cs</DependentUpon>
     </Compile>
     <Compile Include="ModelWFShop.Context.cs">
       <AutoGen>True</AutoGen>
@@ -99,25 +132,49 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ProviderSet.cs">
+      <DependentUpon>ModelWFShop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockroomSet.cs">
+      <DependentUpon>ModelWFShop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
       <DependentUpon>ModelWFShop.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAuthorization.resx">
+      <DependentUpon>FormAuthorization.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormClient.resx">
       <DependentUpon>FormClient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployee.resx">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrder.resx">
+      <DependentUpon>FormOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProduct.resx">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProvider.resx">
+      <DependentUpon>FormProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStockRoom.resx">
+      <DependentUpon>FormStockRoom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EntityDeploy Include="ModelWFShop.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ModelWFShop.Designer.cs</LastGenOutput>
@@ -143,7 +200,14 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo22.png" />
+    <None Include="Resources\Без имени-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Без имени-25.png" />
+    <None Include="Resources\Без имени-24.png" />
+    <None Include="Resources\logoloft1.png" />
+    <None Include="Resources\Без имени-23.png" />
+    <None Include="Resources\Без имени-22.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ModelWFShop.Context.tt">
@@ -156,10 +220,6 @@
       <DependentUpon>ModelWFShop.edmx</DependentUpon>
       <LastGenOutput>ModelWFShop.cs</LastGenOutput>
     </Content>
-    <None Include="Resources\Без имени-2.png" />
-    <None Include="Resources\Без имени-1.png" />
-    <None Include="Resources\Без названия.png" />
-    <None Include="Resources\logoloft.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

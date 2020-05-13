@@ -19,5 +19,9 @@ namespace loft
         public int IdProduct { get; set; }
         public int IdEmployee { get; set; }
         public string Date { get; set; }
+    
+        public virtual ClientSet ClientSet { get; set; }
+        public virtual EmployeeSet EmployeeSet { get; set; }
+        public virtual ProductSet ProductSet { get; set; }
     }
 }

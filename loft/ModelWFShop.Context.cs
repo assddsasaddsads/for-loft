@@ -27,9 +27,10 @@ namespace loft
     
         public virtual DbSet<ClientSet> ClientSet { get; set; }
         public virtual DbSet<EmployeeSet> EmployeeSet { get; set; }
-        public virtual DbSet<ManagerSet> ManagerSet { get; set; }
         public virtual DbSet<OrderSet> OrderSet { get; set; }
         public virtual DbSet<ProductSet> ProductSet { get; set; }
         public virtual DbSet<ProviderSet> ProviderSet { get; set; }
+        public virtual DbSet<StockroomSet> StockroomSet { get; set; }
+        public virtual DbSet<Users> Users { get; set; }
     }
 }

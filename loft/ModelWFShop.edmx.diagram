@@ -4,13 +4,20 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="1e474002112e4a55943eec3bc8a901a9" Name="Diagram1">
-        <EntityTypeShape EntityType="WFShopModel.ClientSet" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="WFShopModel.EmployeeSet" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="WFShopModel.ManagerSet" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="WFShopModel.OrderSet" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="WFShopModel.ProductSet" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="WFShopModel.ProviderSet" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+      <Diagram DiagramId="b883706c97424d2380818cbd244538c0" Name="Diagram1" ZoomLevel="82">
+        <EntityTypeShape EntityType="WFShopModel.ClientSet" Width="1.5" PointX="3" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WFShopModel.EmployeeSet" Width="1.5" PointX="0.5" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WFShopModel.OrderSet" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WFShopModel.ProductSet" Width="1.5" PointX="5.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WFShopModel.ProviderSet" Width="1.5" PointX="7.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WFShopModel.StockroomSet" Width="1.5" PointX="5.5" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WFShopModel.Users" Width="1.5" PointX="1" PointY="0.625" IsExpanded="true" />
+        <AssociationConnector Association="WFShopModel.FK_OrderSet_ClientSet" ManuallyRouted="false" />
+        <AssociationConnector Association="WFShopModel.FK_OrderSet_EmployeeSet" ManuallyRouted="false" />
+        <AssociationConnector Association="WFShopModel.FK_OrderSet_ProductSet1" ManuallyRouted="false" />
+        <AssociationConnector Association="WFShopModel.FK_ProviderSet_ProductSet" ManuallyRouted="false" />
+        <AssociationConnector Association="WFShopModel.FK_StockroomSet_ProductSet" ManuallyRouted="false" />
+        <AssociationConnector Association="WFShopModel.FK_StockroomSet_ProviderSet" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
